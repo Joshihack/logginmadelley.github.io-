@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(270deg, #ffb4ea, #d896f1, #ffc4fa);
+            background-size: 600% 600%;
+            animation: gradientBackground 15s ease infinite;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #3c3c3c;
+        }
+
+        h1, h2 {
+            font-family: 'Pacifico', cursive;
+            color: #25020e;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #4a4a4a;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            text-align: justify; /* Agregado para justificar el texto */
+        }
+
+        main {
+            padding: 4rem 2rem;
+        }
+
+        /* Sección principal con transiciones */
+        section, article {
+            margin: 4rem auto;
+            background: #fff0f5;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            opacity: 0; /* Inicialmente invisibles */
+            transform: translateY(30px); /* Desplazados hacia abajo */
+            transition: all 0.5s ease-in-out; /* Transición suave para todas las propiedades */
+        }
+
+        section:hover, article:hover {
+            transform: translateY(-10px) scale(1.05); /* Levantamiento y escalado */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            background: #ffefff;
+        }
+
+        section.visible, article.visible {
+            opacity: 1; /* Hacemos visibles las secciones con animación */
+            transform: translateY(0); /* Se colocan en su posición original */
+        }
+
+        /* Animación más suave para imágenes */
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            border: 4px solid #ffc4fa;
+            transition: transform 0.5s ease-in-out; /* Transición más suave */
+        }
+
+        img:hover {
+            transform: scale(1.03); /* Efecto de escala más suave */
+        }
+
+        .audio-player {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .audio-player.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .audio-player h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: #3c3c3c;
+            margin-bottom: 1rem;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: #ff6a81;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff99c8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #ffbcff;
+            color: #3c3c3c;
+            padding: 2rem;
+            font-size: 1.2rem;
+            font-family: 'Pacifico', cursive;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ajustes específicos para laptops y computadoras */
+        @media (min-width: 1024px) {
+            main {
+                padding: 6rem 4rem;
+            }
+
+            section, article, .audio-player {
+                max-width: 1000px;
+            }
+
+            h1, h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 1.8;
+            }
+
+            img {
+                max-width: 90%;
+            }
+
+            footer {
+                font-size: 1.4rem;
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="visible">
+            <h2>Brithanny Madelley</h2>
+            <img src="https://i.pinimg.com/736x/47/2d/37/472d3776108631ea643a293a7e3457d1.jpg" alt="Imagen de Brithanny Madelley">
+            <p></p>
+            <p>Querida Madelley,</p>
+            <p>Me pediste que escribiera algo memorable, así que aquí está. Recuerdo perfectamente la primera vez que te hablé, o como tú prefieres llamarlo, nuestro bello clic. Fue el 23 de noviembre. Yo tenía una duda y decidí preguntarte. Al revisar tu perfil, me llevé la maravillosa sorpresa de descubrir que eres increíblemente preciosa.
+
+                Comenzamos a conversar porque me pareciste una persona muy interesante, y quise conocerte más. Insistí hasta que, finalmente, aceptaste mi llamada. Ese día hablamos hasta tarde, y fue simplemente mágico.
+                
+                El momento en que me dijiste que yo te gustaba fue indescriptible. Sentí cómo mi corazón daba un gran salto, jamás imaginé que algo así fuera posible. En aquel entonces no sabía que llegarías a ser lo que eres hoy, la persona más importante de mi vida.
+                
+                A veces todavía no puedo creer lo afortunado que soy de que me hayas elegido.💌</p>
+        </article>
+
+        <article class="visible">
+            <h2>Pasatiempos</h2>
+            <img src="https://i.pinimg.com/736x/5a/ff/0b/5aff0b501389c2d497f6918cb29d83a1.jpg" alt="Hobbies de Brithanny">
+            <p></p>
+            <p>Uno de mis pasatiempos favoritos en este mundo es perderme en el tiempo contigo, aunque en realidad, contigo nada se pierde, todo se gana. Adoro escuchar tu voz, esa melodía que tiene el poder de calmar mis días y alegrar mis noches. Cada palabra que dices es una invitación a conocerte más profundamente, a descubrir qué te apasiona, qué te mueve, qué te hace feliz.
+                
+                Me fascina saber qué te gusta y qué no, qué sueños guardas en tu corazón y qué metas te impulsan a seguir adelante. Y aún más, me llena de alegría compartir las mías contigo, sabiendo que nuestras vidas se entrelazan cada vez más con cada conversación y con cada pequeño detalle.
+                
+                Pero lo que más amo, sin lugar a dudas, es el instante en que nuestras sonrisas se encuentran. Es como si el universo entero conspirara para que, por un momento, no existiera nada más que tú y yo, felices, completos, y llenos de amor.❤️
+            </p>
+        </article>
+
+        <article class="visible">
+            <h2>Tal vez nunca te dije:</h2>
+            <img src="https://i.pinimg.com/736x/e2/6e/20/e26e208931b8edd5209e4b0c9682a81c.jpg" alt="Momentos memorables">
+            <p></p>
+            <p>Tal vez nunca te lo dije de esta manera, pero desde la primera vez que te vi, algo dentro de mí supo que eras especial. Había una luz en ti, algo tan único que me atrapó sin remedio. Tus ojos... son mi refugio favorito. Tienen una magia que no puedo explicar, como si escondieran todos los secretos más hermosos del universo.
+
+                Y tu sonrisa… Ay, tu sonrisa. Es, sin duda, lo más bonito que he visto en mi vida.❤️ Tiene el poder de alegrar mi alma incluso en los días más difíciles. Cada vez que sonríes, siento que todo está bien, como si el mundo entero se detuviera solo para verte brillar. Y no puedo olvidarme de tus cachetes, esos que me derriten con solo mirarlos. Son mi debilidad más tierna; siempre quiero besarlos y acariciarlos.
+                
+                También amo cómo suena mi nombre cuando lo dices. No sé qué haces, pero cada vez que lo escucho en tu voz, me siento especial, como si fuera la única palabra que importa en el mundo. Y aunque sé que ya lo sabes, quiero repetírtelo: adoro cada parte de ti, desde lo que puedo ver hasta lo que llevas dentro. Sobre todo, adoro lo mucho que me quieres.
+                
+                Gracias por ser tú, por llenarme de felicidad y por regalarme momentos que guardaré en mi corazón para siempre.❤️‍🩹</p>
+        </article>
+
+        <nav>
+            <a href="https://www.youtube.com/watch?v=lPeJMoms_Ag&list=RDGMEM6ijAnFTG9nX1G-kbWBUCJA&index=5" target="_blank" aria-label="Mac DeMarco // No Other Heart">Mac DeMarco - No Other Heart</a>
+            <a href="https://www.youtube.com/watch?v=PQt4iWcIza4" target="_blank" aria-label="Reproducir Yebba’s Heartbreak">Drake - Yebba’s Heartbreak</a>
+            <a href="https://www.youtube.com/watch?v=-qvYXZOUImo" target="_blank" aria-label="Reproducir Patadas de Ahogado">Humbe - Patadas de Ahogado</a>
+            <a href="https://www.youtube.com/watch?v=Ckz5_5mYVNw" target="_blank" aria-label="Reproducir Hold On We're Going Home">Arctic Monkeys - Hold On We're Going Home</a>
+            <a href="https://www.youtube.com/watch?v=RNjvXR9Cwsw" target="_blank" aria-label="Reproducir Cuco - Melting">Cuco - Melting</a>
+            <a href="https://www.youtube.com/watch?v=sQ5jisI-Y8s" target="_blank" aria-label="Reproducir Arctic Monkeys - Sweet Dreams">Arctic Monkeys - Sweet Dreams</a>
+            <a href="https://www.youtube.com/watch?v=NWbNntt5M_M" target="_blank" aria-label="Reproducir Daniel, Me Estás Matando - ¿Qué Se Siente Que Me Gustes Tanto? ">Daniel, Me Estás Matando - ¿Qué Se Siente Que Me Gustes Tanto?</a>
+        </nav>
+
+        <div class="audio-player visible">
+            <h2></h2>
+            <audio id="audioPlayer" controls loop>
+                <source src="mac.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+    </main>
+
+    <footer>
+        &copy; De parte de Joshi con todo el amor del mundo. 💕
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('audioPlayer');
+            audio.play().catch(function(error) {
+                console.log('Autoplay fue bloqueado por el navegador:', error);
+            });
+        });
+    </script>
+    <script>
+        // Activamos las animaciones al hacer scroll hacia las secciones
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section, article, .audio-player');
+            sections.forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
